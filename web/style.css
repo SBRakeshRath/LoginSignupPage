@@ -112,8 +112,12 @@ main .style {
 .style .left .text .container .upper h2,
 .style .left .text .container .lower h2 {
     width: 100%;
+    height: auto;
     text-align: center;
     font-size: 5em;
+    white-space: nowrap;
+    /* width: auto;
+    height: 100%; */
 }
 
 .style .left .text .container .upper {
@@ -121,6 +125,8 @@ main .style {
     /* height: 20px; */
     position: absolute;
     background-color: transparent;
+    height: 20%;
+    overflow: hidden;
 }
 
 .style .left .text .container .upper h2 {
@@ -136,6 +142,8 @@ main .style {
     position: absolute;
     /* background-color: gray; */
     bottom: 0;
+    height: 20%;
+    overflow: hidden;
 }
 
 .style .left .text .container .lower h2 {
@@ -164,11 +172,14 @@ main .style {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60%;
+    width: 100%;
 }
 
 .style .left .images .mainImage svg {
-    width: 38vw;
-    max-height: 43vh;
+    width: 100%;
+    height: auto;
+    transform: scale(0.75);
 }
 
 main .form {
